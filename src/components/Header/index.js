@@ -1,19 +1,29 @@
 import styled from 'styled-components';
 import Button from '../Button';
 import Logo from '../Logo';
+import container from '../../tools/container';
 
-const Header = styled.header`
+export const Header = styled.header`
+    
+    background-color:var(--color-black-dark);
+    border-bottom: 4rem solid var(--color-primary-medium); 
+    padding: 20rem 0;
+
+    @media(max-width:800px){
+      
+      padding:15rem 16rem;
+
+     
+    }
+`;
+
+export const Wrapper = styled.div` 
     display: flex;
     justify-content:space-between;
     align-items:center;
-    padding: 20rem 30rem;
-    background-color:var(--color-black-dark);
-    border-bottom: 4rem solid var(--color-primary-medium); 
-    
-
+    ${container};
     @media(max-width:800px){
       justify-content:center;
-      padding:15rem 16rem;
 
       & > ${Logo}{
         height:35rem;
@@ -28,7 +38,10 @@ const Header = styled.header`
         left:0;
         width:100vw;
       } 
+
     }
+
+  
 `;
 
-export default Header;
+ 

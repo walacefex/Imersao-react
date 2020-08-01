@@ -1,25 +1,25 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+
+import Header from './components/Header';
+import Logo from './components/Logo';
+import Button from './components/Button';
+import Footer from './components/Footer';
+import Link from './components/Link';
+import HighLight from './components/HighLight';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <Header>
+     <Logo />
+     <Button>Novo Vídeo</Button>
+    </Header>
+
+    <Footer>
+      <Logo />
+      <p>Site feito na <HighLight>#ImersãoReact</HighLight> da <Link href="https://alura.com.br">Alura</Link></p>
+    </Footer>
+    </>
   );
 }
 

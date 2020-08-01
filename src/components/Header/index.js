@@ -6,17 +6,17 @@ const Header = styled.header`
     display: flex;
     justify-content:space-between;
     align-items:center;
-    padding: 30px 40px;
+    padding: 20rem 30rem;
     background-color:var(--color-black-dark);
-    border-bottom: 4px solid var(--color-primary-medium); 
+    border-bottom: 4rem solid var(--color-primary-medium); 
     
 
     @media(max-width:800px){
       justify-content:center;
-      padding:15px 16px;
+      padding:15rem 16rem;
 
       & > ${Logo}{
-        height:35px;
+        height:35rem;
       }
 
       & > ${Button}{
